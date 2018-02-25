@@ -1,0 +1,50 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ html,body {
+   background-color: #fff;
+ }
+ /* Green button for editing tasks, red button for deleting tasks */
+.btn.btn-green {
+  background-color: #00C2AE;
+  color: #fff;
+  margin: 10px 20px;
+}
+.btn.btn-red {
+  background-color: #FF2C00;
+  color: #fff;
+  margin: 10px 10px;
+}
+
+/* Left div includes new task form */
+.left {
+  display: inline-block;
+  float: left;
+  width: 45%;
+  height: 100vh;
+  text-align: center;
+}
+/* Right div includes all tasks in a list */
+.right {
+  display: inline-block;
+  float: right;
+  width: 45%;
+  height: 100vh;
+}
+/* Sets the font size for each individual task's name */
+.task-name {
+  font-size: 18px;
+  text-align: left;
+}
